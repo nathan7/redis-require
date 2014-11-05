@@ -1,6 +1,6 @@
 {
   "name": "redis-require",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Require Redis Lua scripts with ease.",
   "main": "index.js",
   "repository": {
