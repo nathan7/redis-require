@@ -23,7 +23,7 @@ module.exports = function(require) {
 
     var fn = new Function('__code__', 'return function ' + name_ + '(' + args.join(', ') + ') { return this.eval(' + ['__code__', keyCount].concat(args).join(', ') + ') }')(code)
     fn.install = function(name, client) {
-      if (arguments.length === 2) {
+      if (arguments.length === 1) {
         client = name
         name = name_
       }
