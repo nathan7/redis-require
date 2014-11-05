@@ -3,6 +3,10 @@
   Require Redis Lua scripts with ease.
 
 ## API
+```js
+var requireRedis = require('requireRedis')(require)
+```
+
 ### requireRedis(path)
 
   `requireRedis` expects a path in the same form as `require`, but looks for files with the extension `.redis.lua`.
