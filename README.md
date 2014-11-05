@@ -4,7 +4,7 @@
 
 ## API
 ```js
-var requireRedis = require('requireRedis')(require)
+var requireRedis = require('require-redis')(require)
 ```
 
 ### requireRedis(path)
