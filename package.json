@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/nathan7/redis-require/issues"
   },
-  "homepage": "https://github.com/nathan7/redis-require"
+  "homepage": "https://github.com/nathan7/redis-require",
+  "dependencies": {
+    "resolve": "^1.0.0"
+  }
 }

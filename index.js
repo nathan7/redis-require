@@ -1,11 +1,12 @@
 'use strict'; //jshint node:true, evil:true
 var fs = require('fs')
   , Path = require('path')
+  , resolve = require('resolve')
   , EXTENSION = '.redis.lua'
 
-module.exports = function(require) {
+module.exports = function(__dirname) {
   return function redisRequire(path) {
-    var filename = require.resolve(path + '.redis.lua')
+    var filename = resolve.sync(path, { basedir: __dirname, extensions: [EXTENSION] })
       , code = fs.readFileSync(filename, 'utf-8')
       , commentMatch = code.match(/^-- EVAL (\S+) (\d+)((?: \S+)*)$/m)
 
