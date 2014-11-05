@@ -28,6 +28,10 @@ var requireRedis = require('require-redis')(require)
 requireRedis('./getsetnx').install(Redis.RedisClient.prototype)
 ```
 
+## Example script
+
+  See [getsetnx.redis.lua](https://github.com/nathan7/redis-require/blob/master/getsetnx.redis.lua).
+
 ## License
 
   ISC
