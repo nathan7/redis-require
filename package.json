@@ -1,0 +1,21 @@
+{
+  "name": "redis-require",
+  "version": "1.0.0",
+  "description": "Require Redis Lua scripts with ease.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/redis-require.git"
+  },
+  "keywords": [
+    "redis",
+    "require",
+    "lua"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan7/redis-require/issues"
+  },
+  "homepage": "https://github.com/nathan7/redis-require"
+}
