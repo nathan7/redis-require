@@ -29,6 +29,7 @@ module.exports = function(__dirname) {
         name = name_
       }
       client[name] = fn
+      client[name.toUpperCase()] = fn
     }
     return fn
   }
